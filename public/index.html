@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <title>SCRIBBYL</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W4FRFQLQRW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-W4FRFQLQRW");
+    </script>
+
+    <!-- Preload Hero Images -->
+    <link rel="preload" as="image" href="/assets/images/ScribbylHeroLight.webp" type="image/webp" />
+    <link rel="preload" as="image" href="/assets/images/scribbylherolightmobile.webp" type="image/webp" />
+    <link rel="preload" as="image" href="/assets/images/scribbylherodark.webp" type="image/webp" />
+    <link rel="preload" as="image" href="/assets/images/ScribbylAboutHero.webp" type="image/webp" />
+    <link rel="preload" as="image" href="/assets/images/glowinglinesblue.webp" type="image/webp" />
   </head>
   <body>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W4FRFQLQRW"></script>
     <div id="root"></div>
   </body>
 </html>
