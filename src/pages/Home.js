@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import TrackedButton from "../components/TrackedButton";
-import LinesBackground from "../assets/images/ScribbylHeroLight.png";
-import LinesBackgroundMobile from "../assets/images/scribbylherolightmobile.png";
+import LinesBackground from "../assets/images/ScribbylHeroLight.webp";
+import LinesBackgroundMobile from "../assets/images/scribbylherolightmobile.webp";
 import FourStepProcess from "../components/FourStepProcess";
 import ServiceHighlights from "../components/ServiceHighlights";
 import SlideUpCTA from "../components/SlideUpCTA";

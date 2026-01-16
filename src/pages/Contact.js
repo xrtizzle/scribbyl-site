@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 import ScrollBar from "../components/ScrollBar";
-import GlowingLinesBlue from "../assets/images/glowinglinesblue.png";
+import GlowingLinesBlue from "../assets/images/glowinglinesblue.webp";
 
 
 export default function Contact() {

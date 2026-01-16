@@ -1,5 +1,5 @@
 import { trackClickEvent } from "../utils/analytics";
-import ScribbylHeroDark from "../assets/images/scribbylherodark.png"; // right-side visual
+import ScribbylHeroDark from "../assets/images/scribbylherodark.webp"; // right-side visual
 
 export default function ServicesHero() {
   return (

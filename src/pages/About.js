@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import ScribbleUnderline from "../assets/images/scribble-underline.svg";
 import Founder from "../components/Founder";
-import ScribbylAboutHero from "../assets/images/ScribbylAboutHero.png";
+import ScribbylAboutHero from "../assets/images/ScribbylAboutHero.webp";
 
 export default function About() {
   useEffect(() => {
