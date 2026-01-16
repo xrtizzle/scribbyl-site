@@ -8,7 +8,7 @@ export default function StickyFinalCTA() {
       <img
         src={BackgroundPattern}
         alt="Decorative tech grid"
-        className="absolute inset-0 w-full h-full object-cover opacity-10 z-0 rounded-2xl"
+        className="absolute inset-0 w-full h-full object-cover opacity-15 z-0 rounded-2xl"
       />
 
       {/* Content */}

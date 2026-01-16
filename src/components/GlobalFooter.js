@@ -106,7 +106,7 @@ export default function GlobalFooter() {
       {/* Bottom Footer Bar */}
       <div className="bg-[#111111] border-t border-[#1E1E1E] mt-20 py-6 px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-300">© 2025 <span className="text-[#73A6E4]">Scribbyl</span>. All rights reserved.</p>
+          <p className="text-sm text-gray-300">© 2026 <span className="text-[#73A6E4]">Scribbyl</span>. All rights reserved.</p>
           <img src={logoMark} alt="Scribbyl Logo Mark" className="w-10 h-10 opacity-100 mt-4 md:mt-0" />
         </div>
       </div>

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import TrackedButton from "./TrackedButton";
-import Step1Img from "../assets/images/auditanalyze.svg";
-import Step2Img from "../assets/images/strategizeplan .svg";
-import Step3Img from "../assets/images/implementoptimize .svg";
-import Step4Img from "../assets/images/monitorevolve.svg";
+import Step1Img from "../assets/images/auditanalyze.png";
+import Step2Img from "../assets/images/strategizeplan.png";
+import Step3Img from "../assets/images/implementoptimize.png";
+import Step4Img from "../assets/images/monitorevolve.png";
 import { trackClickEvent } from "../utils/analytics";
 import { CheckCircle } from "lucide-react";
 
@@ -138,7 +138,7 @@ export default function ServiceHighlights() {
             <ul className="mb-6 space-y-2">
               {active.bullets.map((bullet, idx) => (
                 <li key={idx} className="flex items-start gap-2 text-[#526074] font-body">
-                  <CheckCircle className="text-green-500 w-5 h-5 mt-1" />
+                  <CheckCircle className="w-5 h-5 mt-1" stroke="#73A6E4" />
                   <span>{bullet}</span>
                 </li>
               ))}

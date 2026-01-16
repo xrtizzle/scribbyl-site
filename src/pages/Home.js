@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import TrackedButton from "../components/TrackedButton";
-import LinesBackground from "../assets/images/lines.svg";
-import LinesBackgroundMobile from "../assets/images/linemobile.svg";
+import LinesBackground from "../assets/images/ScribbylHeroLight.png";
+import LinesBackgroundMobile from "../assets/images/scribbylherolightmobile.png";
 import FourStepProcess from "../components/FourStepProcess";
 import ServiceHighlights from "../components/ServiceHighlights";
 import SlideUpCTA from "../components/SlideUpCTA";
@@ -53,7 +53,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="bg-[#DEE0E4] text-[#0D0D0D]">
+    <main className="bg-[#FAF9F6] text-[#0D0D0D]">
       {/* HERO SECTION */}
       <section className="relative flex flex-col justify-center items-center overflow-hidden min-h-screen">
         {/* Responsive Background Images */}
@@ -63,7 +63,7 @@ export default function Home() {
             loading="lazy"
             src={LinesBackgroundMobile}
             alt="Decorative mobile background"
-            className="absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 sm:hidden opacity-40"
+            className="absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 sm:hidden opacity-100"
           />
 
           {/* Desktop Background */}
@@ -72,44 +72,33 @@ export default function Home() {
             src={LinesBackground}
             alt="Decorative desktop background"
             className={`absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 hidden sm:block ${
-              glow ? "opacity-40" : "opacity-40"
+              glow ? "opacity-100" : "opacity-100"
             }`}
           />
         </>
 
         {/* Hero Content */}
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
-          className="relative z-30 px-6 md:px-24 py-32 w-full max-w-3xl text-center mx-auto"
-        >
-          <motion.h1
-            variants={fadeInUp}
-            className="will-change-transform text-5xl md:text-6xl font-heading font-extrabold leading-tight mb-6"
-          >
-            Stop Guessing.<br />
-            <span className="text-[#73A6E4]"> Start Growing.</span>
-          </motion.h1>
+        <div className="relative z-30 px-6 md:px-24 py-32 w-full max-w-3xl text-center mx-auto">
+  <h1 className="text-5xl md:text-6xl font-heading font-extrabold leading-tight mb-6">
+    Stop Guessing.<br />
+    <span className="text-[#73A6E4]"> Start Growing.</span>
+  </h1>
 
-          <motion.p
-            variants={fadeInUp}
-            className="will-change-transform text-xl font-body text-[#526074] max-w-xl mb-10 mx-auto"
-          >
-            Scribbyl was born from a simple belief: if you can see the signals, you can grow with certainty.
-            We combine analytics, CX, and dev to turn scattered data into a performance engine.
-          </motion.p>
+  <p className="text-xl font-body text-[#526074] max-w-xl mb-10 mx-auto">
+    Scribbyl was born from a simple belief: if you can see the signals, you can grow with certainty.
+  </p>
 
-          <motion.div variants={fadeInScale} className="will-change-transform">
-            <TrackedButton
-              href="/services"
-              className="inline-block bg-[#73A6E4] text-white text-lg font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-[#567EAF] transition"
-              eventLabel="Hero CTA - How we do it"
-            >
-              How we do it ↗
-            </TrackedButton>
-          </motion.div>
-        </motion.div>
+  <div>
+    <TrackedButton
+      href="/services"
+      className="inline-block bg-[#73A6E4] text-white text-lg font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-[#567EAF] transition"
+      eventLabel="Hero CTA - How we do it"
+    >
+      How we do it ↗
+    </TrackedButton>
+  </div>
+</div>
+
       </section>
 
       {/* Scroll Bar section component */}

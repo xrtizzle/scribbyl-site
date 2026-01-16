@@ -139,12 +139,12 @@ function CardOpen({ item }) {
   const Icon = item.icon;
   return (
     <div className="rounded-2xl bg-white text-[#0D0D0D] p-6 flex flex-col items-center text-center shadow-md">
-      {/* Price badge (top-right) */}
+      {/* Price badge (top-right) 
       <div className="self-end -mt-2 mb-2">
         <span className="inline-flex items-center rounded-full border border-[#E5EEF9] bg-[#F7FAFF] text-[#0D3B66] text-xs font-semibold px-3 py-1">
           {item.price}
         </span>
-      </div>
+      </div>*/}
 
       <Icon className="w-10 h-10 mb-3 text-[#73A6E4]" aria-hidden="true" />
       <h3 className="text-lg font-heading font-semibold mb-1">{item.name}</h3>

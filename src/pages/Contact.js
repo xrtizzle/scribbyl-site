@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 import ScrollBar from "../components/ScrollBar";
+import GlowingLinesBlue from "../assets/images/glowinglinesblue.png";
+
 
 export default function Contact() {
   useEffect(() => {
@@ -33,7 +35,10 @@ export default function Contact() {
 
   return (
     <>
-      <section className="relative pt-32 pb-24 bg-[#FAF9F6] text-[#0D0D0D] px-6 sm:px-10 z-10 overflow-hidden">
+      <section
+  className="relative text-[#0D0D0D] px-4 sm:px-6 md:px-10 overflow-hidden h-[100vh] min-h-[700px] flex items-center bg-cover bg-right"
+  style={{ backgroundImage: `url(${GlowingLinesBlue})` }}
+>
         <div className="max-w-6xl mx-auto flex flex-wrap justify-between items-start gap-10">
           {/* Contact Details */}
           <div className="w-full md:w-[40%]">

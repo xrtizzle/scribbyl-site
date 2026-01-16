@@ -129,17 +129,17 @@ export default function ServiceTiersExpanded() {
               key={index}
               className="relative bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between text-left"
             >
-              {/* Price Ribbon */}
+              {/* Price Ribbon put back mt-8 after mb-4 on header if you want this back
               <div className="absolute top-0 right-0 bg-[#526074] text-white text-sm font-semibold px-4 py-2 rounded-bl-md shadow-md z-10">
                 {tier.price}{" "}
                 <span className="text-white/80 text-xs font-normal">
                   ({tier.priceNote})
                 </span>
-              </div>
+              </div> */}
 
               <div className="flex flex-col flex-grow">
                 {/* Header */}
-                <div className="text-center mb-4 mt-8">
+                <div className="text-center mb-4">
                   <span className="text-xs uppercase font-bold tracking-wide text-[#567EAF] block mb-1">
                     {tier.tier}
                   </span>
@@ -156,7 +156,7 @@ export default function ServiceTiersExpanded() {
                 <ul className="text-sm text-[#0D0D0D] mb-4 space-y-2">
                   {tier.bullets.map((item, idx) => (
                     <li key={idx} className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-green-500 mt-1" />
+                      <CheckCircle className="w-5 h-5 mt-1" stroke="#73A6E4" />
                       {item}
                     </li>
                   ))}
