@@ -60,7 +60,7 @@ export default function Home() {
         <>
           {/* Mobile Background */}
           <img
-            loading="lazy"
+            loading="eager"
             src={LinesBackgroundMobile}
             alt="Decorative mobile background"
             className="absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 sm:hidden opacity-100"
@@ -68,7 +68,7 @@ export default function Home() {
 
           {/* Desktop Background */}
           <img
-            loading="lazy"
+            loading="eager"
             src={LinesBackground}
             alt="Decorative desktop background"
             className={`absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 hidden sm:block ${

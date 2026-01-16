@@ -35,10 +35,16 @@ export default function Contact() {
 
   return (
     <>
-      <section
-  className="relative text-[#0D0D0D] px-4 sm:px-6 md:px-10 overflow-hidden h-[100vh] min-h-[700px] flex items-center bg-cover bg-right"
-  style={{ backgroundImage: `url(${GlowingLinesBlue})` }}
->
+      <section className="relative text-[#0D0D0D] px-4 sm:px-6 md:px-10 overflow-hidden h-[100vh] min-h-[700px] flex items-center">
+  <div className="absolute inset-0 z-0 overflow-hidden">
+    <img
+      src={GlowingLinesBlue}
+      alt="Glowing Lines Background"
+      loading="eager"
+      className="w-full h-full object-cover object-right"
+    />
+  </div>
+
         <div className="max-w-6xl mx-auto flex flex-wrap justify-between items-start gap-10">
           {/* Contact Details */}
           <div className="w-full md:w-[40%]">

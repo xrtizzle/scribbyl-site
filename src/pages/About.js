@@ -15,11 +15,15 @@ export default function About() {
 <section
   className="relative bg-[#F5F5F5] text-[#fffff] px-4 sm:px-6 md:px-10 overflow-hidden h-[100vh] min-h-[700px] flex items-center"
 >
-  <div
-    className="absolute inset-0 bg-no-repeat bg-right bg-cover z-0"
-    style={{ backgroundImage: `url(${ScribbylAboutHero})` }}
-    aria-hidden="true"
+  <div className="absolute inset-0 z-0 overflow-hidden">
+  <img
+    src={ScribbylAboutHero}
+    alt="About Hero Background"
+    loading="eager"
+    className="w-full h-full object-cover object-[60%_center] md:object-right"
   />
+</div>
+
 
   <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10 w-full">
     <div>

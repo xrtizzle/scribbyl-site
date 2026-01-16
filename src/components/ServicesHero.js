@@ -6,12 +6,16 @@ export default function ServicesHero() {
     <section
       className="relative bg-[#F5F5F5] text-[#0D0D0D] px-4 sm:px-6 md:px-10 overflow-hidden h-[100vh] min-h-[700px] flex items-center"
     >
-      <div
-  className="absolute inset-0 bg-no-repeat bg-cover z-0 bg-[position:60%_center] md:bg-right"
-  style={{ backgroundImage: `url(${ScribbylHeroDark})` }}
-  aria-hidden="true"
-/>
-
+      {/* Replaces backgroundImage */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <img
+          src={ScribbylHeroDark}
+          alt=""
+          loading="eager"
+          className="w-full h-full object-cover object-[60%_center] md:object-right"
+          aria-hidden="true"
+        />
+      </div>
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10 w-full">
         {/* Left Content — Unchanged */}
