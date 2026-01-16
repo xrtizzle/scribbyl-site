@@ -45,7 +45,7 @@ export default function Contact() {
     />
   </div>
 
-        <div className="max-w-6xl mx-auto flex flex-wrap justify-between items-start gap-10">
+        <div className="relative z-10 max-w-6xl mx-auto flex flex-wrap justify-between items-start gap-10">
           {/* Contact Details */}
           <div className="w-full md:w-[40%]">
             <h3 className="text-3xl font-bold mb-4">Contact Us</h3>
@@ -128,4 +128,3 @@ export default function Contact() {
     </>
   );
 }
-
