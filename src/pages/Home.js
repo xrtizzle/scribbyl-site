@@ -1,3 +1,5 @@
+//home.js
+
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import TrackedButton from "../components/TrackedButton";

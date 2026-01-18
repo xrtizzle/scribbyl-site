@@ -40,7 +40,7 @@ export default function About() {
         href="#story"
         className="inline-block bg-[#73A6E4] text-white text-base font-semibold px-6 py-3 rounded-xl shadow hover:bg-[#567EAF] transition"
       >
-        Meet the Team ↗
+        Behind the Y ↗
       </a>
     </div>
     <div className="hidden md:block" />

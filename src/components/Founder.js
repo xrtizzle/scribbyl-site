@@ -13,7 +13,7 @@ export default function Founder() {
   }, []);
 
   return (
-    <section className="relative bg-[#0D0D0D] text-white py-16 px-4 md:px-10 overflow-hidden">
+    <section id="story" className="relative bg-[#0D0D0D] text-white py-16 px-4 md:px-10 overflow-hidden">
       <svg className="absolute inset-0 w-full h-full z-0 opacity-20" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <pattern id="altGrid" width="160" height="120" patternUnits="userSpaceOnUse">
